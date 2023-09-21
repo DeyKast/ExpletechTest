@@ -1,0 +1,38 @@
+.modalWindow {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+}
+
+.modalForm {
+  min-width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.modalArea {
+  margin-bottom: 24px;
+  width: 100%;
+  min-height: 50px;
+}

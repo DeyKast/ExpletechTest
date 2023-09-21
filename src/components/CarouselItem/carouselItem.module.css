@@ -1,0 +1,23 @@
+.showCommentsBtn {
+  border: none;
+  background-color: transparent;
+
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 0.15;
+
+  color: gray;
+
+  transition: color linear 300ms;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: #1976d2;
+  }
+}
