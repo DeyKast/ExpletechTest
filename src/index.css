@@ -19,6 +19,7 @@ div::-webkit-scrollbar {
 }
 div::-webkit-scrollbar-track {
   -webkit-box-shadow: gray;
+  margin-top: 15px;
 }
 div::-webkit-scrollbar-thumb {
   background-color: gray;

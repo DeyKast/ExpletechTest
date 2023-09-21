@@ -35,7 +35,7 @@ export const App = () => {
     return () => {
       isMounted = false;
     };
-  }, [selectedCardIndex]);
+  }, []);
 
   const handleCardChange = index => {
     setSelectedCardIndex(index);
@@ -61,7 +61,6 @@ export const App = () => {
       ) : (
         <>
           <Carousel
-            fullHeightHover={false}
             autoPlay={false}
             animation="slide"
             indicators={false}
@@ -77,7 +76,7 @@ export const App = () => {
               borderRadius: '20px 20px 0px 0px',
               borderBottom: 'none',
               padding: '20px 0px',
-              overflowY: 'hidden',
+              overflowY: 'visible',
             }}
           >
             {postsData.map(post => (

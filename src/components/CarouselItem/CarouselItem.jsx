@@ -56,6 +56,8 @@ const CarouselItem = ({ postData }) => {
         <h2
           style={{
             textAlign: 'center',
+            marginLeft: '20px',
+            marginRight: '20px',
           }}
         >
           {title}
@@ -102,12 +104,6 @@ const CarouselItem = ({ postData }) => {
               >
                 {user.name}
               </p>
-              {openComments ? (
-                <CommentsList
-                  data={commentsListData}
-                  commentsState={openComments}
-                />
-              ) : null}
             </>
           ) : (
             <p>Loading user data...</p>
@@ -119,6 +115,12 @@ const CarouselItem = ({ postData }) => {
             {openComments ? 'Hide comments ' : 'Show comments '}
             {openComments ? <ExpandLessIcon /> : <KeyboardArrowDownIcon />}
           </button>
+          {openComments ? (
+            <CommentsList
+              data={commentsListData}
+              commentsState={openComments}
+            />
+          ) : null}
         </div>
       </Card>
     </>

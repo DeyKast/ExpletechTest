@@ -3,7 +3,7 @@ export const CommentsList = ({ data, commentsState }) => {
     <>
       {!commentsState ? (
         <ul style={{ position: 'absolute', top: '0', left: '0' }}>
-          {data.map(comment => (
+          {data.map((comment, index) => (
             <li
               key={comment.id}
               style={{
@@ -38,14 +38,15 @@ export const CommentsList = ({ data, commentsState }) => {
             zIndex: '20000000',
           }}
         >
-          {data.map(comment => (
+          {data.map((comment, index) => (
             <li
               key={comment.id}
               style={{
                 listStyle: 'none',
                 marginBottom: '40px',
                 marginRight: '40px',
-                borderBottom: '1px solid lightgray',
+                borderBottom:
+                  index === data.length - 1 ? 'none' : '1px solid lightgray',
               }}
             >
               <p style={{ fontSize: '16px', fontWeight: '500' }}>
