@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ExpletechTest/static/css/main.80b36171.css",
+    "main.js": "/ExpletechTest/static/js/main.22993f44.js",
+    "index.html": "/ExpletechTest/index.html",
+    "main.80b36171.css.map": "/ExpletechTest/static/css/main.80b36171.css.map",
+    "main.22993f44.js.map": "/ExpletechTest/static/js/main.22993f44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80b36171.css",
+    "static/js/main.22993f44.js"
+  ]
+}
